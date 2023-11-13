@@ -1,0 +1,2 @@
+# lib_24C256
+Lib for EEPROM 24C256 with CubeIDE and MCU STM32F411
