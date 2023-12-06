@@ -1,0 +1,29 @@
+/*
+ * j3_lib_24C256.c
+ *
+ *  Created on: Nov 13, 2023
+ *      Author: Nelson Lima
+ */
+
+#include <stdlib.h>
+
+#include "usr/j3_lib_24C256.h"
+
+/* Retorna um ponteiro para j3_24C256 */
+j3_24C256_t* j3_24c256_new(I2C_HandleTypeDef* _i2c, uint8_t _i2c_address)
+{
+	j3_24C256_t* auxJ3_24c256;
+
+	auxJ3_24c256 = malloc(sizeof(j3_24C256_t));
+
+	auxJ3_24c256->endereco = _i2c_address;
+	auxJ3_24c256->i2c = _i2c;
+
+
+	return auxJ3_24c256;
+}
+
+int8_t j3_24c256_escreveDado(j3_24C256_t *_mem)
+{
+
+}
